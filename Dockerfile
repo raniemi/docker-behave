@@ -8,6 +8,9 @@ WORKDIR /opt/behave
 
 RUN pip install --upgrade pip
 RUN pip install behave==$VERSION
+RUN pip install pyhamcrest
+RUN pip install boto3
+RUN pip install requests==2.18.4 
 
 RUN mkdir -p /data
 WORKDIR /data
